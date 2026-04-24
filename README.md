@@ -26,7 +26,7 @@ _Uveďte konkurenční projekty. Co se vám na nich líbí, co ne? V čem se mů
 
 _Kdo je váš cílový uživatel / zákazník? Popište typického zástupce cílové skupiny._
 
-`Doplňte cílovou skupinu.`
+`Všichni lidé kteří chtějí zaťít zajímavý zážitek prožít si složité situace které si v realitě nejspíš neprožijí.`
 
 
 ## Odkazy a výstupy
