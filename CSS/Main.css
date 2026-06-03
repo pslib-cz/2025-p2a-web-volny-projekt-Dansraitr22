@@ -1,60 +1,229 @@
-@layer Reset,Main ;
+@layer Reset, Typography, Main;
 
-@layer Reset {
-    @import "./Normalize.css" layer(Reset); 
+@layer Reset {}
+
+@layer Typography {
+    html {
+        font-family: 'Roboto', sans-serif;
+    }
 }
 
-@layer Main{
-    :root{
-        --Background-Color:#F4F4A8;
-        --HeaderFooter-Color:#E8B35F;
-        --Card-Color:#9A1313;
-        --Button-Color-Light:#F9734A;
-        --Button-Color-Dark:#C54D29;
-        --Text-Color-Dark:#000000;
-        --Text-Color-Light:#ffffff;
+@layer Main {
+    :root {
+        --Background-Color: #F4F4A8;
+        --HeaderFooter-Color: #E8B35F;
+        --Card-Color: #9A1313;
+        --Button-Color-Light: #F9734A;
+        --Seperator-Dark: #C54D29;
+        --Text-Color-Dark: #000000;
+        --Text-Color-Light: #ffffff;
 
     }
-    .Header{
-        background-color: var(--HeaderFooter-Color);
-    }
-    .Footer{
-        background-color: var(--HeaderFooter-Color);
-        display: grid;
-        grid-template-rows: auto;
-    }
-    .Main{
-background-color: var(--Background-Color);
-    }
-    .Kontakty{
-        text-align: center;
-    }
-    .Kontakty__Info{
-        display: grid;
-        grid-template-rows: auto;
-    }
-    .Info__Box__Informace{
-        justify-content: center;
+
+    .Header {
+        background: var(--HeaderFooter-Color);
         display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        flex: 1 0 0;
+        align-self: stretch;
     }
-    .Informace__Icon{
-        width: 2rem;
-        height: 2rem;
+
+    .Header__Home {
+        display: flex;
+        align-items: center;
+        gap: 16px;
     }
-    .Img{
-        width: 100%;
-        height: 100%;
+
+    .Header__Hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 40px;
+        height: 25px;
+    }
+
+    .Hamburger__Span {
+        display: block;
+        Background: var(--Text-Color-Dark);
+        width: 40px;
+        height: 2.5px;
+
+    }
+
+    .Header__Nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 48px;
+        flex: 1 0 0;
+        align-self: stretch;
+    }
+
+    .Main {
+        background: var(--Background-Color);
+        display: grid;
+        padding: 2rem 1.5rem;
+        row-gap: 4rem;
+        column-gap: 4rem;
+        align-self: stretch;
+        grid-template-rows: repeat(3, fit-content(100%));
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        grid-auto-flow: row;
+    }
+
+    .Footer {
+        background: var(--HeaderFooter-Color);
+        display: grid;
+        min-height: 215px;
+        padding: 2rem 1rem;
+        align-self: stretch;
+        grid-template-rows: fit-content(100%) minmax(0, 1fr);
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        grid-auto-flow: row;
+        row-gap: 1.5rem;
+    }
+
+    .Footer__Kontakt {
+        grid-row: span 1;
+        grid-column: span 1;
+        justify-self: stretch;
+        text-align: center;
+        margin: 0;
+    }
+
+    .Footer__Informations {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+        align-self: stretch;
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    .Footer__InformationBox {
+        display: grid;
+        row-gap: 0.5rem;
+        column-gap: 0.5rem;
+        grid-template-rows: repeat(3, fit-content(100%));
+        grid-template-columns: repeat(1, fit-content(100%));
+        grid-auto-flow: row;
+    }
+
+    .InformationBox__Info {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    .Main__Articles {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        grid-row: span 1;
+        grid-column: span 1;
+        justify-self: stretch;
+    }
+
+    .Articles__Name {
+        display: flex;
+        padding: 10px 0;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        align-self: stretch;
+    }
+
+    .Icon--HeaderLogo {
+        width: 80px;
+        height: 80px;
         object-fit: cover;
     }
-    .Icon--Hamburger{
-        width: 3.75rem;
-        height: 3.75rem;
-    }
-    .Icon--Article{
-        width: 5rem;
-        height: 5rem;
-    }
-    .Hamburger__Item{
 
+    .Icon--Articles {
+        width: 80px;
+        height: 80px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+
+    .Icon--Footer {
+        width: 32px;
+        height: 32px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+
+    .Icon--Hamburger {
+        width: 60px;
+        height: 60px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+
+    .Separator {
+        background: var(--Seperator-Dark);
+        width: 100%;
+        height: 10px;
+    }
+
+    .Body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .H3 {
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .PlainText {
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .Separator {
+        display: block;
+        height: 20px;
+        align-self: stretch;
+        Background: var(--Seperator-Dark);
+    }
+
+    .Hamburger__Menu {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Hamburger__Menu__Item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .Menu__Item__Content {
+        display: flex;
+        height: 80px;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 30px;
+        align-self: stretch;
     }
 }
