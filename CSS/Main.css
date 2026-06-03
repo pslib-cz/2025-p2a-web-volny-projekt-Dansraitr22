@@ -1,0 +1,60 @@
+@layer Reset,Main ;
+
+@layer Reset {
+    @import "./Normalize.css" layer(Reset); 
+}
+
+@layer Main{
+    :root{
+        --Background-Color:#F4F4A8;
+        --HeaderFooter-Color:#E8B35F;
+        --Card-Color:#9A1313;
+        --Button-Color-Light:#F9734A;
+        --Button-Color-Dark:#C54D29;
+        --Text-Color-Dark:#000000;
+        --Text-Color-Light:#ffffff;
+
+    }
+    .Header{
+        background-color: var(--HeaderFooter-Color);
+    }
+    .Footer{
+        background-color: var(--HeaderFooter-Color);
+        display: grid;
+        grid-template-rows: auto;
+    }
+    .Main{
+background-color: var(--Background-Color);
+    }
+    .Kontakty{
+        text-align: center;
+    }
+    .Kontakty__Info{
+        display: grid;
+        grid-template-rows: auto;
+    }
+    .Info__Box__Informace{
+        justify-content: center;
+        display: flex;
+    }
+    .Informace__Icon{
+        width: 2rem;
+        height: 2rem;
+    }
+    .Img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .Icon--Hamburger{
+        width: 3.75rem;
+        height: 3.75rem;
+    }
+    .Icon--Article{
+        width: 5rem;
+        height: 5rem;
+    }
+    .Hamburger__Item{
+
+    }
+}

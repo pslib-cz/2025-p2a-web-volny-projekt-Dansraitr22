@@ -2,7 +2,7 @@
 
 > **Jméno a příjmení:** `Daniel Šraitr`
 
-> **Název projektu:** `Larpiom`
+> **Název projektu:** `Larpion`
 
 ---
 
