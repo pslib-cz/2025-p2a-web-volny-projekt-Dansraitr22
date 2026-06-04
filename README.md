@@ -35,7 +35,7 @@ _Shrnutí všech odkazů na jednom místě. Průběžně aktualizujte._
 
 | Výstup | Odkaz |
 |---|---|
-| GitHub Pages (live) | [`Doplň odkaz`](#) |
+| GitHub Pages (live) | [`Doplň odkaz`](https://pslib-cz.github.io/2025-p2a-web-volny-projekt-Dansraitr22/) |
 | Grafický manuál (Figma / Canva) | [`figma`](https://www.figma.com/design/q508CBfyOSrH2neTBU1LB8/Untitled?node-id=0-1&p=f&t=ENnOfMNWDDZxNfih-0) |
 | Grafický návrh webu (Figma) | [`Figma`](https://www.figma.com/design/q508CBfyOSrH2neTBU1LB8/Untitled?node-id=0-1&p=f&t=ENnOfMNWDDZxNfih-0) |
 | Fotografie / média | [`Doplň odkaz`](#) |
