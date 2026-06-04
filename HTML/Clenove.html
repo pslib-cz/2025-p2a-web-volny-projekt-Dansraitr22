@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Larpion</title>
     <link rel="stylesheet" href="../CSS/Main.css">
+    <link rel="stylesheet" href="../CSS/Clenove.css">
     <script src="../Scripts/Hamburger.js" defer></script>
     <link rel="icon" type="image/svg+xml" href="../Assets/Photos/Favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,16 +14,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 </head>
-<body>
+
+<body class="Body">
     <header class="Header">
         <nav class="Header__Nav">
             <div class="Header__HomeAndHamburger">
-                  <a href="../index.html"><div class="Header__Home">
+                <a href="../index.html">
+                    <div class="Header__Home">
 
-                    <img src="../Assets/Photos/Logo.svg" alt="Logo" class="Icon Icon--HeaderLogo">
-                    <h1 class="Nav__Text H1">Larpion</h1>
+                        <img src="../Assets/Photos/Logo.svg" alt="Logo" class="Icon Icon--HeaderLogo">
+                        <h1 class="Nav__Text H1">Larpion</h1>
 
-                </div></a>
+                    </div>
+                </a>
                 <div class="Header__Hamburger" id="Hamburger">
                     <span class="Hamburger__Span"></span>
                     <span class="Hamburger__Span"></span>
@@ -59,7 +64,8 @@
                     </a>
                 </div>
                 <div class="Hamburger__Menu__Item">
-                    <div class="Separator Separator--Nav"></div><a href="../HTML/PravidlaASvety.html" class="Menu__Link H3">
+                    <div class="Separator Separator--Nav"></div><a href="../HTML/PravidlaASvety.html"
+                        class="Menu__Link H3">
                         <div class="Menu__Item__Content">
                             <p>Pravidla a Světy</p>
                             <!-- 
@@ -77,7 +83,43 @@
 
         </nav>
     </header>
+    <main class="Main--Clenove">
 
+        <h2 class="H2">Členové</h2>
+        <div class="Members">
+            <div class="MemberCard">
+                <img src="../Assets/Photos/Members/Havran.svg" alt="Havran" class="Img--MemberCard">
+                <h3 class="H3--Card">Havran</h3>
+            </div>
+            <div class="MemberCard">
+                <img src="../Assets/Photos/Members/Barča.svg" alt="Barča" class="Img--MemberCard">
+                <h3 class="H3--Card">Barča</h3>
+            </div>
+            <div class="MemberCard">
+                <img src="../Assets/Photos/Members/Katie.svg" alt="Katie" class="Img--MemberCard">
+                <h3 class="H3--Card">Katie</h3>
+            </div>
+            <div class="MemberCard">
+                <img src="../Assets/Photos/Members/Daník.svg" alt="Daník" class="Img--MemberCard">
+                <h3 class="H3--Card">Daník</h3>
+            </div>
+            <div class="MemberCard">
+                <img src="../Assets/Photos/Members/Čiči.svg" alt="Čiči" class="Img--MemberCard">
+                <h3 class="H3--Card">Čiči</h3>
+            </div>
+            <div class="MemberCard">
+                <img src="../Assets/Photos/Members/Tom.svg" alt="Tom" class="Img--MemberCard">
+                <h3 class="H3--Card">Tom</h3>
+            </div>
+            <div class="MemberCard">
+                <img src="../Assets/Photos/Members/Marek.svg" alt="Marek" class="Img--MemberCard">
+                <h3 class="H3--Card">Marek</h3>
+            </div>
+            <div>
+
+            </div>
+            </div>
+    </main>
     <footer class="Footer">
         <h2 class="Footer__Kontakt">Kontakty</h2>
         <div class="Footer__Informations">
@@ -97,4 +139,5 @@
         </div>
     </footer>
 </body>
+
 </html>
