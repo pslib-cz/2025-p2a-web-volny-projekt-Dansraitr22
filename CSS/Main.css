@@ -51,6 +51,7 @@
 
 @layer Main {
     :root {
+        --CardBackground-Color: #F0E086;
         --Background-Color: #F4F4A8;
         --HeaderFooter-Color: #E8B35F;
         --Card-Color: #9A1313;
@@ -184,7 +185,8 @@
         grid-column: span 1;
         justify-self: stretch;
         width: 100%;
-        max-width: none;
+        background-color: var(--CardBackground-Color);
+border-radius: 1rem;
     }
 
     .Articles__Name {

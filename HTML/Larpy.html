@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Larpion</title>
     <link rel="stylesheet" href="../CSS/Main.css">
+    <link rel="stylesheet" href="../CSS/Larpy.css">
     <script src="../Scripts/Hamburger.js" defer></script>
     <link rel="icon" type="image/svg+xml" href="../Assets/Photos/Favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,16 +14,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <header class="Header">
         <nav class="Header__Nav">
             <div class="Header__HomeAndHamburger">
-                  <a href="../index.html"><div class="Header__Home">
+                <a href="../index.html">
+                    <div class="Header__Home">
 
-                    <img src="../Assets/Photos/Logo.svg" alt="Logo" class="Icon Icon--HeaderLogo">
-                    <h1 class="Nav__Text H1">Larpion</h1>
+                        <img src="../Assets/Photos/Logo.svg" alt="Logo" class="Icon Icon--HeaderLogo">
+                        <h1 class="Nav__Text H1">Larpion</h1>
 
-                </div></a>
+                    </div>
+                </a>
                 <div class="Header__Hamburger" id="Hamburger">
                     <span class="Hamburger__Span"></span>
                     <span class="Hamburger__Span"></span>
@@ -59,7 +64,8 @@
                     </a>
                 </div>
                 <div class="Hamburger__Menu__Item">
-                    <div class="Separator Separator--Nav"></div><a href="../HTML/PravidlaASvety.html" class="Menu__Link H3">
+                    <div class="Separator Separator--Nav"></div><a href="../HTML/PravidlaASvety.html"
+                        class="Menu__Link H3">
                         <div class="Menu__Item__Content">
                             <p>Pravidla a Světy</p>
                             <!-- 
@@ -78,7 +84,50 @@
         </nav>
     </header>
 
-        <footer class="Footer">
+
+
+
+
+    <main class="Main--Larpy">
+
+        <div class="Text--Center">
+            <h1 class="H1">LARPY A PROJEKTY</h1>
+            <p class="Plaintext">Tady najdeš přehled toho, co máme za sebou, co připravujeme a co je zatím ve vývoji.
+            </p>
+
+        </div>
+        <div class="LarpCardGroup">
+            <div class="LarpCard"><img src="" alt="">
+                <h2>Stará dobrá (10.6-14.6.2026)</h2>
+                <a href="./Larp/Staradobra.html" class="Button--Registration H3">Registrace otevřena</a>
+                <article>Vraťte se do světa Aiwanu, kde se osudy smrtelníků i bohů znovu proplétají.
+
+                    Čeká vás víkend plný příběhů, dobrodružství, humoru i nečekaných rozhodnutí.
+
+                    Ať už jste veterán Staré Dobré, nebo jedete poprvé, připravili jsme hru, ve které si každý najde své
+                    místo</article>
+            </div>
+            <div class="LarpCard"><img src="" alt="">
+                <h2>Supernatural (odložen)</h2>
+                <a href="./Larp/supernatural.html" class="Button--Registration Button--Registration--Closed">Registrace otevřena</a>
+                <article>Atmosférický larp zasazený do současného světa, ve kterém se pod povrchem běžné reality skrývá
+                    něco víc.
+
+                    Tajemné události, nejasné stopy a rozhodnutí s následky prověří, komu lze věřit a co je člověk
+                    ochoten obětovat, když se setká s neznámem</article>
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+
+
+
+
+    <footer class="Footer">
         <h2 class="Footer__Kontakt">Kontakty</h2>
         <div class="Footer__Informations">
             <div class="Footer__InformationBox">
@@ -97,4 +146,5 @@
         </div>
     </footer>
 </body>
+
 </html>
